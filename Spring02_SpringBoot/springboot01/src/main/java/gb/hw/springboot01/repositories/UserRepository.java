@@ -41,7 +41,7 @@ public class UserRepository {
      * @return
      */
     public User save(User user) {
-        String sql = "INSERT INTO userTable VALUES (NULL, ?, ?)";
+        String sql = "INSERT INTO userTable (firstName, lastname) VALUES (?, ?)";
         jdbc.update(sql, user.getFirstName(), user.getLastName());
         return  user;
     }
