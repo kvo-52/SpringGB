@@ -1,5 +1,6 @@
 package ru.gb.AppHW03.repository;
 
+import org.springframework.dao.DataAccessException;
 import ru.gb.AppHW03.domain.User;
 import ru.gb.AppHW03.mapper.UserMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -37,9 +38,14 @@ public class UserRepository {
      * Добавление пользователя в БД.
      * @param user объект пользователя.
      */
-    public void addUser(User user){
+    public boolean addUser(User user){
         String sql = "insert into \"user\" (name, age, email) values (?, ?, ?)";
-        jdbc.update(sql, user.getName(), user.getAge(), user.getEmail());
+        try{
+            jdbc.update(sql, user.getName(), user.getAge(),user.getEmail());
+            return true;
+        }catch (DataAccessException e){
+            return false;
+        }
     }
 
 }
