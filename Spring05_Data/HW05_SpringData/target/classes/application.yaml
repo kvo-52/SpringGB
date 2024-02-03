@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/postgres?currentSchema=postgresTask
+    username: root
+    password: secret
+    driver-class-name: org.postgresql.Driver
+liquibase:
+  change-log: classpath:resources\liquibase\changesets\db.changelog.yaml
+  enabled: true
+  default-schema: postgresTask
+springdoc:
+  override-with-generic-response: false
