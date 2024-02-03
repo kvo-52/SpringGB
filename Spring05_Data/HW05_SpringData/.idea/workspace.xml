@@ -5,22 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85b1bbb3-b7eb-45da-a4ba-d0dce5905dec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/Controllers/ControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/Controllers/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/DTO/DtoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/DTO/TaskDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/Models/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/Models/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/MyException/TaskNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/Repositories/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/Services/ITaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HW05_SpringData/Services/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/changesets/V1__init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/changesets/V2__insert_data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/preliquibase/postgresql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/controllers/AdviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/controllers/UserProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/exceptions/BodyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/exceptions/UserAlreadyInProjectException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/models/EntityWithRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/models/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/models/UsersProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/repositories/ProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/repositories/UserProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/java/ru/gb/data2/Task2/services/UserProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/resources/liquibase/changesets/CreateTable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/resources/liquibase/changesets/InsertData.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/resources/liquibase/db.changelog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HW05_SpringDataTask2/src/main/resources/preliquibase/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/preliquibase/postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/preliquibase/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/preliquibase/postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/preliquibase/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -60,7 +72,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GeekBrains/БЛОК-3_Developer/Developer_Java/4.Spring/SpringProjects/Spring05_Data/HW05_SpringData&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/GeekBrains/БЛОК-3_Developer/Developer_Java/4.Spring/SpringProjects/Spring05_Data/HW05_SpringDataTask2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
