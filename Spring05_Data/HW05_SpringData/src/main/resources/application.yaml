@@ -4,9 +4,8 @@ spring:
     username: root
     password: secret
     driver-class-name: org.postgresql.Driver
-liquibase:
-  change-log: classpath:liquibase\changesets\db.changelog.yaml
-  enabled: true
-  default-schema: postgresTask1
-spring-doc:
-  override-with-generic-response: false
+  liquibase:
+    change-log: classpath:liquibase/db.changelog.yaml
+    enabled: true
+  springdoc:
+    override-with-generic-response: false

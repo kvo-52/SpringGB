@@ -1,12 +1,12 @@
 spring:
   datasource:
-    url: jdbc:postgresql://db:5432/postgres?currentSchema=postgresTask1
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=postgresTask1
     username: root
     password: secret
     driver-class-name: org.postgresql.Driver
-liquibase:
-  change-log: classpath:resources\liquibase\changesets\db.changelog.yaml
-  enabled: true
-  default-schema: postgresTask1
-spring-doc:
-  override-with-generic-response: false
+  liquibase:
+    change-log: classpath:liquibase/db.changelog.yaml
+    enabled: true
+
+  springdoc:
+    override-with-generic-response: false
