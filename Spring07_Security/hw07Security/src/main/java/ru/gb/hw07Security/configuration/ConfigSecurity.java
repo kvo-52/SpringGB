@@ -10,7 +10,8 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
-
+@Configuration
+@EnableWebSecurity
 public class ConfigSecurity extends WebSecurityConfigurerAdapter{
     /**
      * Конфигурация защиты Spring Security.
@@ -20,14 +21,14 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/private-data").hasRole("ADMIN")
-                .antMatchers("/public-data").authenticated()
+                .antMatchers("/private").hasRole("ADMIN")
+                .antMatchers("/public").authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/login")
                 .permitAll()
                 .loginProcessingUrl("/process_login")
-                .defaultSuccessUrl("/public-data")
+                .defaultSuccessUrl("/public")
                 .failureUrl("/login?error")
                 .and()
                 .logout()

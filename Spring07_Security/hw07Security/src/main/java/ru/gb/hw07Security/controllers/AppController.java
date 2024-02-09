@@ -23,7 +23,7 @@ public class AppController {
      */
     @GetMapping("/public")
     public String userPage(){
-        return "public_page";
+        return "public";
     }
 
     /**
@@ -32,7 +32,7 @@ public class AppController {
      */
     @GetMapping("/private")
     public String adminPage(){
-        return "private_page";
+        return "private";
     }
 
     /**
@@ -50,6 +50,6 @@ public class AppController {
      */
     @GetMapping("/login")
     public String auth(){
-        return "login-page";
+        return "login";
     }
 }
