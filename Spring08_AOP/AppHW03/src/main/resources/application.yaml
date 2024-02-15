@@ -11,6 +11,6 @@ spring:
   liquibase:
     change-log: classpath:liquibase/db.changelog.yaml
     enabled: true
-    default-schema: postgresTask3
+    default-schema: postgres
   springdoc:
     override-with-generic-response: false
