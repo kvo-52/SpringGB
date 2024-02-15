@@ -3,7 +3,7 @@ package ru.gb.AppHW08.services;
 import ru.gb.AppHW08.aspect.TrackUserAction;
 import ru.gb.AppHW08.domain.User;
 import ru.gb.AppHW08.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
@@ -14,20 +14,12 @@ import java.util.stream.Collectors;
  * Сервис работы с хранилищем пользователей.
  */
 @Service
+@AllArgsConstructor
 public class DataProcessingService {
     /**
      * Поле с репозиторием пользователей.
      */
-    @Autowired
-    private UserRepository repository;
-
-    /**
-     * Получение репозитория пользователей.
-     * @return объект репозитория.
-     */
-    public UserRepository getRepository() {
-        return repository;
-    }
+    private final UserRepository repository;
 
     /**
      * Сортировка пользователей по возрасту.

@@ -1,7 +1,7 @@
 package ru.gb.AppHW08.services;
 
 import ru.gb.AppHW08.domain.User;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 /**
