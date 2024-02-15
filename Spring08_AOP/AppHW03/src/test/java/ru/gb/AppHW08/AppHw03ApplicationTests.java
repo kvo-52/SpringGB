@@ -1,4 +1,4 @@
-package ru.gb.AppHW03;
+package ru.gb.AppHW08;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

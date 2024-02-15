@@ -1,7 +1,7 @@
-package ru.gb.AppHW03.controllers;
+package ru.gb.AppHW08.controllers;
 
-import ru.gb.AppHW03.domain.User;
-import ru.gb.AppHW03.services.DataProcessingService;
+import ru.gb.AppHW08.domain.User;
+import ru.gb.AppHW08.services.DataProcessingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

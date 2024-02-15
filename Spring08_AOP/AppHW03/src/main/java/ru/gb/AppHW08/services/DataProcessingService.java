@@ -1,7 +1,8 @@
-package ru.gb.AppHW03.services;
+package ru.gb.AppHW08.services;
 
-import ru.gb.AppHW03.domain.User;
-import ru.gb.AppHW03.repository.UserRepository;
+import ru.gb.AppHW08.aspect.TrackUserAction;
+import ru.gb.AppHW08.domain.User;
+import ru.gb.AppHW08.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -68,6 +69,10 @@ public class DataProcessingService {
      * @param user объект пользователя.
      */
     public void addUser(User user) {
-        repository.addUser(user);
+        repository.save(user);
+    }
+    @TrackUserAction
+    public List<User> getAllUsers(){
+        return repository.findAll();
     }
 }

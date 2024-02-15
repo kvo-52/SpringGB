@@ -1,6 +1,6 @@
-package ru.gb.AppHW03.services;
+package ru.gb.AppHW08.services;
 
-import ru.gb.AppHW03.domain.User;
+import ru.gb.AppHW08.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +11,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
 
-    @Autowired
-    private NotificationService notificationService;
-
-    /**
+     /**
      * Создание нового пользователя.
      * @param name имя пользователя.
      * @param age возраст пользователя.
@@ -27,9 +24,6 @@ public class UserService {
         user.setAge(age);
         user.setEmail(email);
 
-        // Отправляем уведомление о создании нового пользователя
-        notificationService.notifyUser(user);
-
-        return user;
+       return user;
     }
 }

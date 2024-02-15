@@ -1,12 +1,15 @@
-package ru.gb.AppHW03.services;
+package ru.gb.AppHW08.services;
 
-import ru.gb.AppHW03.domain.User;
+import ru.gb.AppHW08.aspect.TrackUserAction;
+import ru.gb.AppHW08.domain.User;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 /**
  * Сервис регистрации новых пользователей.
  */
 @Service
+@AllArgsConstructor
 public class RegistrationService {
 
     /**
@@ -18,24 +21,6 @@ public class RegistrationService {
      * Поле сервиса создания пользователей.
      */
     private final UserService userService;
-    /**
-     * Поле сервиса консольных уведомлений.
-     */
-    private final NotificationService notificationService;
-
-    /**
-     * Конструктор класса.
-     * @param dataProcessingService сервис работы с хранилищем пользователей.
-     * @param userService сервис создания пользователей.
-     * @param notificationService сервис консольных уведомлений.
-     */
-    public RegistrationService(DataProcessingService dataProcessingService,
-                               UserService userService,
-                               NotificationService notificationService) {
-        this.dataProcessingService = dataProcessingService;
-        this.userService = userService;
-        this.notificationService = notificationService;
-    }
 
     /**
      * Получение сервиса работы с хранилищем пользователей.
@@ -51,9 +36,9 @@ public class RegistrationService {
      * @param age возраст пользователя.
      * @param email email пользователя.
      */
+    @TrackUserAction
     public void processRegistration(String name, int age, String email){
         User createUser = userService.createUser(name, age, email);
         dataProcessingService.addUser(createUser);
-        notificationService.sendNotification("Пользователь сохранен в БД");
     }
 }
