@@ -2,9 +2,10 @@ package ru.gb.WebClient.seriveces;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import ru.gb.WebClient.interfaces.FileGateway;
 import ru.gb.WebClient.models.Product;
-import ru.gb.WebClient.FileGateway;
-import ru.gb.WebClient.ShopService;
+import ru.gb.WebClient.interfaces.FileGateway;
+import ru.gb.WebClient.seriveces.ShopService;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

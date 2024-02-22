@@ -1,4 +1,4 @@
-package ru.gb.WebClient.seriveces;
+package ru.gb.WebClient.interfaces;
 
 import org.springframework.integration.annotation.MessagingGateway;
 import org.springframework.integration.file.FileHeaders;
