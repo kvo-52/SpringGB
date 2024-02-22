@@ -14,4 +14,4 @@ spring:
           enabled: true
           lower-case-service-id: true
   config:
-    import: configserver:http://localhost:8888
+    import: configserver:http://localhost:9999

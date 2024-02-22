@@ -14,7 +14,7 @@ spring:
       ddl-auto: none
 
   config:
-    import: configserver:http://localhost:8888
+    import: configserver:http://localhost:9999
 
 management:
   endpoints:
