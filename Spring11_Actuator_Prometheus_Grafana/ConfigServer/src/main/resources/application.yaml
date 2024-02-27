@@ -1,0 +1,15 @@
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: github-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kvo-52/micro-services-config.git
+          basedir: file://c:/tmp/shop
+          default-label: main
